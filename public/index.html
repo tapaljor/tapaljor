@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tashi Paljor - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Tashi Paljor</h1>
+        <p class="subtitle">Compter Programmer</p>
+        <p class="details">Toronto, Ontario, Canada, 437-772-1207</p>
+    </header>
+
+    <section class="summary">
+        <p>I am a dedicated computer programmer with a strong foundation in full-stack development, specializing in Node.js, MongoDB, and JavaScript. 
+        Currently, I am completing my Computer Programming diploma at Seneca Polytechnic, and I am set to graduate in December 2024. 
+        My passion for solving complex problems and building scalable applications drives my continuous learning and growth in the field.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Languages: JavaScript (Vanilla, Node.js), PHP, PL/SQL, HTML5, CSS</li>
+            <li>Databases: MongoDB, MySQL, Oracle</li>
+            <li>Frameworks: Socket.io, Express.js</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Tools: Visual Studio Code, Xcode</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project" id="project1">
+                <h3>Anonymous Chat</h3>
+                <h6>Event-driven communication for real-time, anonymous messaging designed for casual conversations.</h6>
+                <a href="https://github.com/tapaljor/timepass" target="_blank" class="text-link">View Code on GitHub</a>
+                <a href="https://timepass-2af3f609bb70.herokuapp.com/" target="_blank" class="text-link">Live Demo</a>
+                <button onclick="openPopup('popup1')">View Details</button>
+            </div>
+            <div class="project" id="project2">
+                <h3>Typing Test</h3>
+                <h6>Test and improve your typing skills with real-time scoring and performance tracking.</h6>
+                <a href="https://github.com/tapaljor/typing" target="_blank" class="text-link">View Code on GitHub</a>
+                <a href="https://typing-test-4dfa0c72564f.herokuapp.com/" target="_blank" class="text-link">Live
+                    Demo</a>
+                <button onclick="openPopup('popup2')">View Details</button>
+            </div>
+            <div class="project" id="project3">
+                <h3>Residential Management</h3>
+                <h6>A comprehensive solution for real-life condo management.</h6>
+                <a href="https://github.com/tapaljor/nodeTest" target="_blank" class="text-link">View Code on GitHub</a>
+                <a href="https://node-project1-a34ffc7e940a.herokuapp.com/" target="_blank" class="text-link">Live
+                    Demo</a>
+                <button onclick="openPopup('popup3')">View Details</button>
+            </div>
+            <div class="project" id="project4">
+                <h3>Rural Broadband (RBB) Stock Management</h3>
+                <h6>Stock, rent, and document management system for internal use, accessible via IP tables or VPN.</h6>
+                <button onclick="openPopup('popup4')">View Details</button>
+            </div>
+            <div class="project" id="project5">
+                <h3>Event Management</h3>
+                <h6>A comprehensive solution for managing events, reporting, scheduling, and resources, accessible via VPN.</h6>
+                <button onclick="openPopup('popup5')">View Details</button>
+            </div>
+            <div class="project" id="project6">
+                <h3>HR Management System</h3>
+                <h6>A robust solution for managing employee data, transfers, and performance, accessible via VPN.</h6>
+                <button onclick="openPopup('popup6')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popups for each project -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup1')">&times;</span>
+            <h3>Anonymous Chat</h3>
+            <a href="https://timepass-2af3f609bb70.herokuapp.com/" target="_blank" class="text-link">Live Demo</a>
+            <h4>Event-driven communication for real-time anonymous messaging.</h6>
+                <p>
+                    This project is a real-time chat application that allows users to communicate anonymously. It is
+                    built
+                    with Socket.io to provide seamless, bi-directional communication between users and the server,
+                    enabling
+                    instantaneous message exchanges. The server is powered by Node.js, handling requests efficiently and
+                    managing user sessions.
+                </p>
+                <h4> Key Features:</h4>
+                <ul>
+                    <li><b>Real-time Messaging:</b> New users are broadcasted to all connected users in real-time
+                        without any delays,
+                        thanks to the event-driven nature of Socket.io. One-to-one chat feature without disturbance.
+                    </li>
+                    <li><b>Anonymous Communication:</b>
+                        Users can join chatrooms and send messages without the need for account
+                        creation or personal details, ensuring privacy and anonymity. No history of chat or user is
+                        stored.
+                    </li>
+                    <li><b>Responsive Design:</b> The front-end is built with HTML5 and CSS to ensure a clean, intuitive
+                        user interface
+                        that works across all devices, including desktops, tablets, and smartphones.
+                    </li>
+                    <li><b>Lightweight and Fast:</b> The combination of Node.js and JavaScript ensures that the
+                        application runs
+                        smoothly, providing a fast and responsive experience for users.
+                    </li>
+                    <li><b> Scalable Architecture: </b>The app is designed to handle multiple simultaneous connections,
+                        making it
+                        suitable for both small and large groups of users.
+                    </li>
+                    <li><b>Real-time Updates:</b> Users can see when others are typing and when new users join or leave
+                        the
+                        chatroom.
+                    </li>
+                </ul>
+                <ul>
+                    <h4>Technologies Used</h4>
+                    <li>Socket.io</li>
+                    <li>Node.js</li>
+                    <li>JavaScript (Vanilla)</li>
+                    <li>HTML5 & CSS</li>
+                    <li>MongoDB</li>
+                </ul>
+        </div>
+    </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup2')">&times;</span>
+            <h3>Typing Test</h3>
+            <p>This project allows users to test and improve their typing speed and accuracy. It uses JavaScript to
+                handle user interactions and an API to import random quotes, which users can type to measure their
+                performance.</p>
+            <ul>
+                <li><b>Randomized Quotes:</b> Every typing test presents a different quote imported through an API,
+                    ensuring a varied experience with each session.
+                </li>
+                <li><b>Real-time Speed Tracking:</b> Users can see their typing speed measured in real-time, providing
+                    immediate feedback on their performance.</li>
+            </ul>
+            <ul>
+                <h4>Technologies Used</h4>
+                <li>JavaScript (Vanilla)</li>
+                <li>JQuery</li>
+                <li>HTML5 & CSS</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup3')">&times;</span>
+            <h3>Residential Management</h3>
+            <h4>Key Features:</h4>
+            <ul>
+                <li><b>Resident Management:</b>Keep track of residents' details, including contact information and unit
+                    assignments.
+                </li>
+                <li><b>Maintenance Requests:</b>
+                    Residents can submit maintenance requests, and management can track and update the status in real
+                    time.
+                </li>
+                <li><b>Parcel Managemnt:</b>Tracking incoming and outoing parcels. 
+                </li>
+                <li><b>Vistor Parking:</b>Tracking and auto completing visitor parking. Generating report to be used by management as well as parking enforcement. 
+            </ul>
+            ul>
+                <h4>Technologies Used</h4>
+                <li>Node.js</li>
+                <li>JavaScript (Vanilla)</li>
+                <li>MongoDB</li>
+                <li>HTML5 & CSS</li>
+            </ul>
+        </div>
+    </div>
+    <div id="popup4" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup4')">&times;</span>
+            <h3>Rural Broadband (RBB) Stock Management</h3>
+            <h4>Key Features:</h4>
+            <ul>
+                <li><b>Stock Management:</b> Efficiently track and manage inventory, including incoming and outgoing stock.</li>
+                <li><b>Rent Management:</b> Handle rent collection, payments, and tracking for equipment rentals.</li>
+                <li><b>Document Management:</b> Organize and store important documents related to stock, rentals, and customer agreements.</li>
+                <li><b>Reporting:</b> Generate detailed reports on stock levels, rent payments, and other critical data.</li>
+            </ul>
+            <h4>Technologies Used</h4>
+            <ul>
+                <li>Linux</li>
+                <li>Apache</li>
+                <li>MySQL</li>
+                <li>PHP</li>
+                <li>HTML5 & CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <p><i>Note: The system is hosted internally and is accessible only within the organization's network via IP tables or VPN.</i></p>
+        </div>
+    </div>
+    <div id="popup5" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup5')">&times;</span>
+            <h3>Event Management</h3>
+            <h4>Key Features:</h4>
+            <ul>
+                <li><b>Event Scheduling:</b> Schedule and manage events efficiently, with real-time updates and notifications for all participants.</li>
+                <li><b>Attendee Management:</b> Keep track of attendees, registrations, and contact details for better organization.</li>
+                <li><b>Resource Allocation:</b> Manage resources like venues, equipment, and other logistics required for each event.</li>
+                <li><b>Reporting:</b> Generate comprehensive reports on event participation for law enforceent, resource usage, and feedback for future planning.</li>
+            </ul>
+            <h4>Technologies Used</h4>
+            <ul>
+                <li>Linux</li>
+                <li>Apache</li>
+                <li>MySQL</li>
+                <li>PHP</li>
+                <li>HTML5 & CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <p><i>Note: The system is hosted internally and is accessible only within the organization's network via IP tables or VPN.</i></p>
+        </div>
+    </div>
+    <div id="popup6" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup6')">&times;</span>
+            <h3>HR Management System</h3>
+            <h4>Key Features:</h4>
+            <ul>
+                <li><b>Employee Management:</b> Manage employee records, including contact information, roles, and performance data.</li>
+                <li><b>Transfer Management:</b> Handle transfer management efficiently with automated processes.</li>
+                <li><b>Performance Tracking:</b> Monitor employee performance and generate reports to assist with promotions and reviews.</li>
+                <li><b>Leave and Attendance:</b> Track employee attendance, leaves, and vacation days with real-time updates.</li>
+            </ul>
+            <h4>Technologies Used</h4>
+            <ul>
+                <li>Linux</li>
+                <li>Apache</li>
+                <li>MySQL</li>
+                <li>PHP</li>
+                <li>HTML5 & CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <p><i>Note: The system is hosted internally and is accessible only via VPN.</i></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
