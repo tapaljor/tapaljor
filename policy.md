@@ -1,4 +1,5 @@
 Effective Date: 2025 06 05
+
 App Name: TibetChat
 
 This app allows anonymous chat. We do not collect any personal information. 
